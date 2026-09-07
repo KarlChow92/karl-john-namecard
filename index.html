@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0067b8" />
+    <meta
+      name="description"
+      content="Digital namecard for Karl-John Chow, Account Technology Stragegist at Microsoft."
+    />
+    <title>Karl-John Chow | Digital Namecard</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="namecard" aria-labelledby="person-name">
+        <div class="identity-panel">
+          <header class="brand" aria-label="Microsoft">
+            <span class="microsoft-mark" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </span>
+            <span class="microsoft-wordmark">Microsoft</span>
+          </header>
+
+          <div class="identity">
+            <p class="eyebrow">Digital namecard</p>
+            <h1 id="person-name">Karl-John<br />Chow</h1>
+            <p class="role">Account Technology Stragegist</p>
+          </div>
+
+          <div class="contact-list">
+            <a href="mailto:kj.chow@microsoft.com" class="contact-link">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 5.5h18v13H3zM4 7l8 6 8-6" />
+                </svg>
+              </span>
+              <span>
+                <small>Email</small>
+                kj.chow@microsoft.com
+              </span>
+            </a>
+            <a href="tel:+85298654422" class="contact-link">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M7.2 3.5 10 8l-2.1 2.1a15.8 15.8 0 0 0 6 6l2.1-2.1 4.5 2.8-.7 3.4c-.2.8-.9 1.3-1.7 1.3A15.6 15.6 0 0 1 2.5 5.9c0-.8.5-1.5 1.3-1.7z"
+                  />
+                </svg>
+              </span>
+              <span>
+                <small>Phone</small>
+                +852 9865 4422
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="action-panel">
+          <div class="qr-section">
+            <div class="qr-frame">
+              <canvas id="contact-qr" aria-label="QR code to add Karl-John Chow as a contact"></canvas>
+            </div>
+            <div>
+              <h2>Scan to connect</h2>
+              <p>Point your phone camera at the code to save the contact instantly.</p>
+            </div>
+          </div>
+
+          <a id="save-contact" class="save-button" href="#">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 3v12m-5-5 5 5 5-5M4 19h16" />
+            </svg>
+            Save contact
+          </a>
+          <p class="file-hint">Downloads a standard vCard (.vcf)</p>
+        </div>
+      </section>
+      <p class="footer-note">Technology that empowers every person and every organization.</p>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
